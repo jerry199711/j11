@@ -1,0 +1,312 @@
+# Calculate area of a circle
+
+pi=3.14
+r=float(input("Enter the radius of the circle: "))
+area=pi*r*r
+print("Area of the circlr is " ,area)
+
+# Check number either positive,negative or zero
+
+n=int(input("Enter number: "))
+
+if(n>0):
+    print("Number is positive")
+elif(n<0):
+    print("Number is negative")
+else:
+    print("Number is zero")
+    
+    # Divisibility check of two numbers
+
+lower=int(input("Enter lower range limit: "))
+upper=int(input("Enter upper range limit: "))
+n=int(input("Enter the number to be divided by: "))
+for i in range(lower,upper+1):
+    if (i%n==0):
+        print(i)
+        
+        # Days Calculator
+
+from datetime import date
+f_date = date(2014, 7, 2)
+l_date = date(2014, 7, 11)
+delta = l_date - f_date
+print(delta.days)
+
+# Calculate volume if a sphere
+
+π = 3.142
+radius_sphere = int(input("Enter Radius of Sphere: "))
+
+volume_of_Sphere = 4/3 * π * radius_sphere**3
+
+print("Volume of the Sphere with Radius " + str(radius_sphere) + "  is " + "%.2f" % volume_of_Sphere + " .")
+
+# Copy string a times
+
+str1 = 'Hello world '
+str1*2
+'hello world hello world '
+
+str1*4
+
+# Check if number is Even or Odd
+
+n=int(input("Enter n : "))
+if (n%2==0):
+    print (n,"is even number")
+else:
+    print(n,"i odd number")
+    
+    # Vowel Tester
+
+ch = input("Enter a character: ")
+
+if(ch=='A' or ch=='a' or ch=='E' or ch =='e' or ch=='I'
+ or ch=='i' or ch=='O' or ch=='o' or ch=='U' or ch=='u'):
+    print(ch, "is a Vowel")
+else:
+    print(ch, "is a Consonant")
+    
+    # Triangle area
+
+a=int(input("Enter any number:"))
+b=int(input("Enter any number:"))
+c=int(input("Enter any number:"))
+
+s=(a+b+c)/2
+area=(s*(s-a)*(s-b)*(s-c) ** 0.5)
+print("The are of Triangle is ",area)
+      
+      # Calculate Interest
+
+principle = float(input("Enter the principle amount: "))
+time = int(input("Enter the time(years): "))
+rate = float(input("Enter the rate: "))
+simple_Interest = (priciple*time*rate)/100
+print("The simple interest is: " ,simple_interest)
+
+# Euclidean distance
+
+import math
+
+x1 = int(input("Enter Co-Ordinate For x1 :"))
+x2 = int(input("Enter Co-Ordinate For x2 :"))
+y1 = int(input("Enter Co-Ordinate For y1 :"))
+y2 = int(input("Enter Co-Ordinate For y2 :"))
+
+distance = math.sqrt( ((x1-y1)**2)+((x2-y2)**2) )
+
+print(distance)
+
+# Feet to Centimeter Converter
+
+feet = 3
+
+cm = feet * 30.48
+
+print (f"Feet({feet}) => Centimeters({round(cm, 3)})")
+
+# BMI Calculator
+
+x = float(input("Enter your Height in m"))
+y = float(input("Enter your Weight in kg"))
+
+z = y / x **2
+
+print ("Your Body Mass Index is :",z)
+
+# Sum of n postive Integers
+
+n = int (input("Enter number: "))
+
+sum = (n* ( n + 1 )) /2
+print(sum)
+
+
+# Digits Sum of a Number
+
+ 
+number =int(input("Enter a Number"))
+
+sumnum = str(number)
+
+lst = list(sumnum)
+
+
+totalDigits = ' + '.join(sumnum)
+
+print(totalDigits)
+
+total = 0
+while number>0:
+    digit = number%10
+    total = total+digit
+    number = number//10
+print("Sum Of ", totalDigits, " is ", total)
+
+# Decimal to Binary Converter
+
+print ("Enter 'x' for exit.");
+dec = input("Enter any number is Decimal form: ");
+if dec == 'x';
+  exit();
+else;
+ decimal = int(dec);
+    print(decimal,"is binary ",bin(decimal));
+    
+    # Vowel and Consonants counter
+
+str1 = input("How are you doing : ")
+vowels = 0
+consonants = 0
+str1.lower()
+
+for i in str1:
+    if(i =='a' or i == 'e' or i == 'i' or i == 'o' or i == 'u'):
+        vowels = vowels + 1
+        else:
+            consonants = consonants + 1
+            
+            print("Total Number of vowels in this string = ", vowels)
+            print("Total Number of consonants in this string = ", consonants)
+            
+            # Palindrome tester
+
+def isPalindrome(str): 
+    
+    for i in xrange(0, len(str)/2):  
+        if str[i] != str[len(str)-i-1]: 
+            return False
+    return True
+   
+s = "malayalam"
+ans = isPalindrome(s) 
+  
+if (ans): 
+    print("Yes") 
+else: 
+    print("No") 
+    
+    # Count Alphabets, Numbers and Special Characters
+
+ string = input("Please Enter your Own String : ")
+alphabets = digits = special = 0
+
+for i in range(len(string)):
+    if(string[i].isalpha()):
+        alphabets = alphabets + 1
+    elif(string[i].isdigit()):
+        digits = digits + 1
+    else:
+        special = special + 1
+        
+print("\nTotal Number of Alphabets in this String :  ", alphabets)
+print("Total Number of Digits in this String :  ", digits)
+print("Total Number of Special Characters in this String :  ", special)
+
+# Pattern
+
+# *
+# **
+# ***
+# ****
+# *****
+# ****
+# ***
+# **
+# *
+
+
+# CODE
+
+n=5;
+for i in range(n):
+    for j in range(i):
+        print ('* ', end="")
+    print('')
+
+for i in range(n,0,-1):
+    for j in range(i):
+        print('* ', end="")
+    print('')
+    
+    # Pattern
+
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+# 1 2 3 4
+# 1 2 3
+# 1 2
+# 1
+
+# CODE
+
+number=5
+random = 1
+for i in range(number):
+    for j in range(i):
+        print (j+1, end="")
+    
+    print('')
+
+for i in range(5,0,-1):
+    for j in range(i):
+        print(j+1, end="")
+    print('')
+    
+    # Pattern 
+
+# 1                                                                                                             
+# 22                                                                                                            
+# 333                                                                                                           
+# 4444                                                                                                          
+# 55555                                                                                                         
+# 666666                                                                                                        
+# 7777777                                                                                                       
+# 88888888                                                                                                      
+# 999999999    
+
+# CODE
+
+for i in range(10):
+    print(str(i) * i)
+    
+    
+    # MARK SHEET 
+
+student = str(input('Enter the student name '))
+clas = str(input('Enter the class '))
+sec = str(input('Enter the section '))
+maths = int(input('Enter the maths subject marks '))
+physics = int(input('Enter the physics subject marks '))
+chemistry = int(input('Enter the chemistry subject marks '))
+english = int(input('Enter the english subject marks '))
+urdu = int(input('Enter the urdu subject marks '))
+Total = maths + physics + chemistry + english + urdu
+average = (maths + physics + chemistry + english + urdu)/5.0
+print()
+print()
+print()
+print('SCHOLARS SCHOOL SYSTEM')
+print('----------------')
+print('Annual Exams Results')
+print('-------------------')
+print('student name:',student,'class:',clas,'Sec:',sec)
+print()
+print('Maths     :  ',maths)
+print('Physics   :  ',physics)
+print('Chemistry :  ',chemistry)
+print('English   :  ',english)
+print('Urdu      :  ',urdu)
+print()
+print('Total     :  ',Total,'out of 500')
+print("Average   :  ",average,'%')
+print()
+if (maths<33)or(physics<33)or(chemistry<33)or(english<33)or(urdu<33):
+   print("Result:   Fail")
+else:
+   print ('Result:  Pass')
